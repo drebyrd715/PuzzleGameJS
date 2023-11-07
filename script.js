@@ -14,7 +14,7 @@ window.onload = function() {
             // create tile img /////
             let block = document.createElement("img");
             // make dummy imgs for game/////
-            block.src = "dummy.png";
+            block.src = "./images/dummy.png";
             document.querySelector("#gameBoard").append(block);
         }
     }
@@ -24,10 +24,11 @@ window.onload = function() {
     for (let i=1; i <= rows*columns; i++){
         pieces.push(i.toString()); /// put "1" to "25" into arr (puzzle images name)     
     }
-    //// insert puzzle pieces in bottom section///////////
-    // for (let i = 0; i < pieces.length; i++){
-    //     let block = document.createElement("img");
-    //     block.src = "./images" + pieces[i] + ".png";
-    //     document.querySelector("puzzPieces").append(block)
-    // }
+    // insert puzzle pieces in bottom section///////////
+    for (let i = 0; i < pieces.length; i++){
+        let block = document.createElement("img");
+        block.src = "./picturefolder" + pieces[i] + ".jpg";
+        document.querySelector("puzzPieces").append(block)
+    }
 }
+
