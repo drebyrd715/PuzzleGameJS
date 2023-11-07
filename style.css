@@ -17,3 +17,17 @@ body{
     height: 79px;
     border: 0.5px solid blue; 
 }
+/* need 2 rows and 13 columns */
+#puzzPieces{
+    height: 160px;
+    width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 3px solid gold;
+}
+#puzzPieces Img{
+    width: 79px;
+    height: 79px;
+    border: 0.5px solid blue; 
+}
